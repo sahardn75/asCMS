@@ -1,0 +1,9 @@
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.csprojResolveAssemblyReference.cache
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\bussinessLogic.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\bussinessLogic.pdb
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\bussinessObject.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\Data Access Layer.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\bussinessObject.pdb
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\Data Access Layer.pdb
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.pdb

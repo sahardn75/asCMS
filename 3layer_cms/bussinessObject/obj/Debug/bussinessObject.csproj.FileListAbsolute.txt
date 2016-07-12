@@ -1,0 +1,5 @@
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\bin\Debug\bussinessObject.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\bin\Debug\bussinessObject.pdb
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\obj\Debug\bussinessObject.csprojResolveAssemblyReference.cache
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\obj\Debug\bussinessObject.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\obj\Debug\bussinessObject.pdb

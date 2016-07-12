@@ -1,0 +1,7 @@
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.csprojResolveAssemblyReference.cache
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\bin\Debug\Data Access Layer.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\bin\Debug\Data Access Layer.pdb
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\bin\Debug\bussinessObject.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\bin\Debug\bussinessObject.pdb
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.dll
+c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.pdb
