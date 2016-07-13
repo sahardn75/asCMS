@@ -34,7 +34,7 @@ namespace Data_Access_Layer
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select Address from Userinfo where Name='" + Name + "' and Pass='" + Pass + "'", con);
+                SqlCommand cmd = new SqlCommand("select userType from Userinfo where Name='" + Name + "' and Pass='" + Pass + "'", con);
                 string a = cmd.ExecuteScalar().ToString();
                 return a;
             }
