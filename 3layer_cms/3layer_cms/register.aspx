@@ -19,7 +19,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td> Name </td>
+                    <td> User Name </td>
                     <td>
            <asp:TextBox ID="txtname" Width="150px" runat="server"></asp:TextBox>
                     </td>
