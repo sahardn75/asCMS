@@ -31,7 +31,7 @@
            <asp:TextBox ID="txpass" Width="150px" runat="server"></asp:TextBox>
                     </td>
                 </tr>
-                    <td>Address </td>
+                    <td> City </td>
                     <td>
             <asp:TextBox ID="txAddress" Width="150px" runat="server"></asp:TextBox>
                     </td>

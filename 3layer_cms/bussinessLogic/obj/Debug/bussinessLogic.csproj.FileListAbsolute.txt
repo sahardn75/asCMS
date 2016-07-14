@@ -7,3 +7,12 @@ c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussines
 c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\bin\Debug\Data Access Layer.pdb
 c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.dll
 c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\bin\Debug\bussinessLogic.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\bin\Debug\bussinessLogic.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\bin\Debug\bussinessObject.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\bin\Debug\Data Access Layer.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\bin\Debug\bussinessObject.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\bin\Debug\Data Access Layer.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessLogic\obj\Debug\bussinessLogic.pdb

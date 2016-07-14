@@ -11,7 +11,7 @@ namespace _3layer_cms
 {
     public partial class login : System.Web.UI.Page
     {
-           UserBO register = new UserBO();
+        UserBO register = new UserBO();
         UserBL balregister = new UserBL();
         LoginBL ballogin = new LoginBL();
         protected void Page_Load(object sender, EventArgs e)
@@ -21,8 +21,9 @@ namespace _3layer_cms
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-             string Name = UserName.Text;
-            string Pass = PassLog.Text;
+            string Name = UserName.Text;
+            string hashedPass = PassLog.Text; 
+            string Pass = ballogin.getMd5Hash(hashedPass);
             int a = ballogin.ballog(Name, Pass);
             UserName.Text = "";
             PassLog.Text = "";
@@ -30,7 +31,7 @@ namespace _3layer_cms
             {
                 Session["Name"] = Name;
                 string type = ballogin.usertype(Name, Pass);
-                Session["usertype"] = type;
+                Session["userType"] = type;
                 Response.Redirect("userHome.aspx");
             }
             else if (a == 2)
