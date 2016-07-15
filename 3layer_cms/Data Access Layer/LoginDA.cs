@@ -48,38 +48,6 @@ namespace Data_Access_Layer
                 con.Close();
             }
         }
-        public bool AddLoginSession(string Name , string type,string Pass)
-        {
-            try
-            {   
-                con.Open();
-                SqlCommand cmd = new SqlCommand("select user_id from Userinfo where Name='" + Name + "'and Pass='" + Pass + "' ", con);
-                SqlDataReader reader = cmd.ExecuteReader();
-                long id = 0;
-                while (reader.Read())
-                {
-                    id = (long)reader["user_id"];
-                }
-                reader.Close();
-                SqlCommand cmd1 = new SqlCommand("INSERT INTO session (user_name ,user_type,user_id) VALUES (@Name,@type,@id) ", con);
-             
-               
-                 cmd1.Parameters.AddWithValue("@Name", Name);
-                 cmd1.Parameters.AddWithValue("@type",type);
-                 cmd1.Parameters.AddWithValue("@id", id);
-                 cmd1.ExecuteNonQuery();
-
-                 return true;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-            finally
-            {
-                con.Close();
-            }
-              
-        }
+       
     }
 }

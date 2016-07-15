@@ -12,3 +12,10 @@ C:\Users\ASMAN-RAYANEH\Desktop\selection\3layer_cms\Data Access Layer\bin\Debug\
 C:\Users\ASMAN-RAYANEH\Desktop\selection\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.csprojResolveAssemblyReference.cache
 C:\Users\ASMAN-RAYANEH\Desktop\selection\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.dll
 C:\Users\ASMAN-RAYANEH\Desktop\selection\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\bin\Debug\Data Access Layer.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\bin\Debug\Data Access Layer.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\bin\Debug\bussinessObject.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\bin\Debug\bussinessObject.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.csprojResolveAssemblyReference.cache
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\Data Access Layer\obj\Debug\Data Access Layer.pdb
