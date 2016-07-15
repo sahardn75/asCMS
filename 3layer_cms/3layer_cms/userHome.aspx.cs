@@ -17,8 +17,6 @@ namespace _3layer_cms
     {
 
         DashboardDA dash_da = new DashboardDA();
-
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Myconstr"].ToString());
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Cookies["Persistance"] != null)
@@ -57,10 +55,23 @@ namespace _3layer_cms
                         DateTime.Now.Month.ToString() + DateTime.Now.Day.ToString() +
                         DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString() + fileExtension;
                     FileUpload1.PostedFile.SaveAs(Server.MapPath("~/Uploads/") + s_newfilename);
-                    //long id = dash_da.find_id(Name,hashedPass);
-                    //bool result = dash_da.add_upload_file( s_newfilename, fileName ,id);
+                   
+                    
+                    string[] cookieValue={"atila" , "level-1"};
+                    if (Request.Cookies["Persistance"] != null)
+                    {
 
-
+                        string cookie = Request.Cookies["Persistance"].Value;
+                        
+                        if (cookie.Contains("*"))
+                        {
+                            cookieValue = cookie.Split('*');
+                        }
+                    }
+                    string userName = cookieValue[0];
+                    long id = dash_da.find_id(userName);
+                    bool result = dash_da.add_upload_file(Server.MapPath("~/Uploads/") + s_newfilename, fileName, id);
+                    
                     response.Text = "file uploaded successfully";
                 }
                 catch (Exception ex)
