@@ -19,6 +19,7 @@ namespace _3layer_cms
         LoginBL ballogin = new LoginBL();
         LoginDA dallogin = new LoginDA();
         DashboardDA dash_da = new DashboardDA();
+
         HttpCookie aCookieValPer = new HttpCookie("Persistance");
         protected void Page_Load(object sender, EventArgs e)
         {

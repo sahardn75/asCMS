@@ -32,9 +32,9 @@ namespace Data_Access_Layer
         }
        public bool add_upload_file(string article_name,string article_address , long userId)
        {
-            
-           
-           SqlCommand cmd = new SqlCommand("INSERT INTO article(article_name,article_address,user_id) VALUES (@Name,@Address,@id)",con);
+
+
+           SqlCommand cmd = new SqlCommand("INSERT INTO article(article_name,article_address,user_id) VALUES (@Name,@Address,@id)", con);
            cmd.Parameters.AddWithValue("@Name", article_name);
            cmd.Parameters.AddWithValue("@Address", article_address);
            cmd.Parameters.AddWithValue("@id", userId);
@@ -44,5 +44,6 @@ namespace Data_Access_Layer
 
        return true;
        }
+      
     }
 }
