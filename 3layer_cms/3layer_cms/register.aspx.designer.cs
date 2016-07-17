@@ -13,15 +13,6 @@ namespace _3layer_cms {
     public partial class register {
         
         /// <summary>
-        /// Head1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
-        
-        /// <summary>
         /// form1 control.
         /// </summary>
         /// <remarks>
@@ -37,7 +28,7 @@ namespace _3layer_cms {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtname;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtname;
         
         /// <summary>
         /// txpass control.
@@ -46,16 +37,7 @@ namespace _3layer_cms {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txpass;
-        
-        /// <summary>
-        /// txAddress control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txAddress;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txpass;
         
         /// <summary>
         /// txtEmailid control.
@@ -64,7 +46,7 @@ namespace _3layer_cms {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmailid;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEmailid;
         
         /// <summary>
         /// txtmobile control.
@@ -73,7 +55,16 @@ namespace _3layer_cms {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmobile;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl txtmobile;
+        
+        /// <summary>
+        /// txAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txAddress;
         
         /// <summary>
         /// BtnSave control.
@@ -82,6 +73,6 @@ namespace _3layer_cms {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSave;
+        protected global::System.Web.UI.HtmlControls.HtmlButton BtnSave;
     }
 }

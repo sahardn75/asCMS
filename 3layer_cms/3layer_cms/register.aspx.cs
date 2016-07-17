@@ -13,29 +13,29 @@ namespace _3layer_cms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            int a = 0;
         }
 
         protected void BtnSave_Click(object sender, EventArgs e)
         {
-            if (txtname.Text == "")
+            if (txtname.Value == "")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Please Enter Name')", true);
             }
 
-            else  if (txpass.Text == "")
+            else if (txpass.Value == "")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Please Enter Password')", true);
             }
-            else if (txAddress.Text == "")
+            else if (txAddress.Value == "")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Please Enter City')", true);
             }
-            else if (txtEmailid.Text == "")
+            else if (txtEmailid.Value == "")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Please Enter EmailID')", true);
             }
-            else if (txtmobile.Text == "")
+            else if (txtmobile.Value == "")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Please Enter Mobile no')", true);
             }
@@ -48,14 +48,14 @@ namespace _3layer_cms
                 */
                 UserBL objUBL = new UserBL();
 
-                ObjUBO.Name = txtname.Text;
-                ObjUBO.address = txAddress.Text;
-                ObjUBO.EmailID = txtEmailid.Text;
-                ObjUBO.Mobilenumber = txtmobile.Text;
-                string hashedPass = objUBL.getMd5Hash(txpass.Text);
+                ObjUBO.Name = txtname.Value;
+                ObjUBO.address = txAddress.Value;
+                ObjUBO.EmailID = txtEmailid.Value;
+                ObjUBO.Mobilenumber = txtmobile.Value;
+                string hashedPass = objUBL.getMd5Hash(txpass.Value);
                 ObjUBO.Pass = hashedPass;
 
-               
+
                 int result = objUBL.SaveUserregisrationBL(ObjUBO);
 
                 if (result > 0)
