@@ -23,47 +23,46 @@ namespace _3layer_cms
         HttpCookie aCookieValPer = new HttpCookie("Persistance");
         protected void Page_Load(object sender, EventArgs e)
         {
-          
-        }
 
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string Name = UserName.Text;
-            string hashedPass = PassLog.Text; 
+            string Name = UserName.Value;
+            string hashedPass = PassLog.Value;
             string Pass = ballogin.getMd5Hash(hashedPass);
             int a = ballogin.ballog(Name, Pass);
 
             HttpCookie aCookieValPer = new HttpCookie("Persistance");
-           
-            UserName.Text = "";
-            PassLog.Text = "";
+
+            UserName.Value = "";
+            PassLog.Value = "";
             if (a == 1)
             {
-              
+
                 string type = ballogin.usertype(Name, Pass);
                 aCookieValPer.Value = Name + "***" + type;
                 aCookieValPer.Expires = DateTime.Now.AddDays(1);
-            //    bool result = dallogin.AddLoginSession(aCookieValPer.Value.ToString(), Pass);
+                //    bool result = dallogin.AddLoginSession(aCookieValPer.Value.ToString(), Pass);
 
                 Response.Redirect("userHome.aspx");
             }
             else if (a == 2)
             {
-                
-               
+
+
                 string type = "admin";
                 aCookieValPer.Value = Name + "*" + type;
                 aCookieValPer.Expires = DateTime.Now.AddDays(1);
-               // bool result = dallogin.AddLoginSession(Session["Name"].ToString(), type, Pass);
-                   
-              
-               Response.Redirect("adminHome.aspx");
+                // bool result = dallogin.AddLoginSession(Session["Name"].ToString(), type, Pass);
+
+
+                Response.Redirect("adminHome.aspx");
             }
             else
             {
-                log_mess.Text = "Enter the valid id";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Enter the valid id')", true);
             }
-           
+
         }
-      }
-  }
+    }
+}
