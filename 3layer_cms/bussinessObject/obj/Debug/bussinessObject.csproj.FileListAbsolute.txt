@@ -3,3 +3,8 @@ c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussines
 c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\obj\Debug\bussinessObject.csprojResolveAssemblyReference.cache
 c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\obj\Debug\bussinessObject.dll
 c:\users\asman-rayaneh\documents\visual studio 2013\Projects\3layer_cms\bussinessObject\obj\Debug\bussinessObject.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessObject\bin\Debug\bussinessObject.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessObject\bin\Debug\bussinessObject.pdb
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessObject\obj\Debug\bussinessObject.csprojResolveAssemblyReference.cache
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessObject\obj\Debug\bussinessObject.dll
+C:\Users\ASMAN-RAYANEH\Desktop\پوشه\asCMS\3layer_cms\bussinessObject\obj\Debug\bussinessObject.pdb

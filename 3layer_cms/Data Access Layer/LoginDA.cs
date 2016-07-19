@@ -12,7 +12,7 @@ namespace Data_Access_Layer
    public class LoginDA
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Myconstr"].ToString());
-        public int userlogin(string Name, string Pass)//checking the user name and password.If matched count 1 not 0.
+        public int userlogin(string Name, string Pass)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace Data_Access_Layer
                 con.Close();
             }
         }
-        public string userlog(string Name, string Pass)//getting the userType
+        public string userlog(string Name, string Pass)
         {
             try
             {

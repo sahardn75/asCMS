@@ -43,10 +43,20 @@ namespace _3layer_cms
                 aCookieValPer.Value = Name + "***" + type;
                 aCookieValPer.Expires = DateTime.Now.AddDays(1);
                 //    bool result = dallogin.AddLoginSession(aCookieValPer.Value.ToString(), Pass);
-
+                Response.Cookies.Add(aCookieValPer);
                 Response.Redirect("userHome.aspx");
             }
-            else if (a == 2)
+            if (a == 2)
+             {
+
+                string type = ballogin.usertype(Name, Pass);
+                aCookieValPer.Value = Name + "***" + type;
+                aCookieValPer.Expires = DateTime.Now.AddDays(1);
+                //    bool result = dallogin.AddLoginSession(aCookieValPer.Value.ToString(), Pass);
+                Response.Cookies.Add(aCookieValPer);
+                Response.Redirect("refereeHome.aspx");
+            }
+            else if (a == 3)
             {
 
 
@@ -55,7 +65,7 @@ namespace _3layer_cms
                 aCookieValPer.Expires = DateTime.Now.AddDays(1);
                 // bool result = dallogin.AddLoginSession(Session["Name"].ToString(), type, Pass);
 
-
+                Response.Cookies.Add(aCookieValPer);
                 Response.Redirect("adminHome.aspx");
             }
             else

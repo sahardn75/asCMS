@@ -1,53 +1,75 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userHome.aspx.cs" Inherits="_3layer_cms.userHome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="True" CodeBehind="userHome.aspx.cs" Inherits="_3layer_cms.userHome" %>
 
-<!DOCTYPE html>
+<!Doctype html>
+<html lang="en">
+<link href="css/bootstrap.css" rel="stylesheet" />
+<script src="Scripts/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<head>
+    <title>ارسال مقاله</title>
+    <style type="text/css">
+        .upload-drop-zone {
+            height: 300px;
+            border-width: 3px;
+            margin-bottom: 40px;
+        }
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+        /* skin.css Style*/
+        .upload-drop-zone {
+            color: #ccc;
+            border-style: dashed;
+            border-color: #ccc;
+            line-height: 200px;
+            text-align: center;
+        }
+
+            .upload-drop-zone.drop {
+                color: #222;
+                border-color: #222;
+            }
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <asp:Label ID="wellcome" runat="server" Text="WELLCOME TO YOUR HOME"></asp:Label><br />
-            <asp:FileUpload ID="FileUpload1" runat="server" />
-            <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="Upload" />
-            <asp:Label ID="response" runat="server" Text=""></asp:Label>
-            <hr />
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading"><strong>ارسال مقالات</strong></div>
+            <div class="panel-body">
 
+                <!-- Standar Form -->
+                <h4>لطفا فایل مورد نظر را(با فرمت پی دی اف) انتخاب کنید</h4><br />
+                
+                <h4>برای ارسال مقاله به کنفرانس ابتدا باید کنفرانس مورد نظر خود را انتخاب کنید</h4>
+                <form action="" method="post" enctype="multipart/form-data" id="form1" runat="server">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input type="file" name="files[]" id="uploadfiles" multiple runat="server">
+                        </div>
+                        <button type="submit" class="btn btn-sm btn-primary" id="btnUpload" onserverclick="Upload" runat="server">ارسال مقا له</button>
+                    </div>
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" EmptyDataText="No files uploaded">
+                        <Columns>
+                            <asp:BoundField DataField="Text" HeaderText="File Name" />
+                            <asp:TemplateField>
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="lnkDelete" Text="Delete" CommandArgument='<%# Eval("Value") %>' runat="server" OnClick="DeleteFile" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                             <asp:TemplateField>
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="lnsend" Text="Send" CommandArgument='<%# Eval("Value") %>' runat="server" OnClick="SendFile" />
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+                </form>
 
-
+            </div>
         </div>
-    
-    <div>  
-        <asp:Label ID="Label4" runat="server" Text="change password"></asp:Label> <br />
-    
-
-        <asp:Label ID="old_pass" runat="server" Text="old Password" Font-Bold="True" 
-            Width="100px" BackColor="#FFFF66" ForeColor="#FF3300"></asp:Label>
-
-        <asp:TextBox ID="TextBox_oldpass" runat="server" ForeColor="#CC6600" 
-            TextMode="Password" Width="100px"></asp:TextBox><br />
-
-         <asp:Label ID="pass1" runat="server" Text="new password" Font-Bold="True" 
-            Width="100px" BackColor="#FFFF66" ForeColor="#FF3300"></asp:Label>
-
-        <asp:TextBox ID="TextBox_newpass" runat="server" ForeColor="#CC6600" 
-            TextMode="Password" Width="100px"></asp:TextBox><br />
+    </div>
+    <!-- /container -->
 
 
-         <asp:Label ID="pass2" runat="server" Text="confirm new Password" Font-Bold="True" 
-            Width="100px" BackColor="#FFFF66" ForeColor="#FF3300"></asp:Label>
 
-        <asp:TextBox ID="TextBox_confirm_pass" runat="server" ForeColor="#CC6600" 
-            TextMode="Password" Width="100px"></asp:TextBox><br />
-
-        <asp:Button ID="btn_submit" runat="server" Text="submit" Font-Bold="True" 
-            BackColor="#CCFF99" onclick="btn_submit_click"  /><br />
-
-             <asp:Label ID="lb1" runat="server" Font-Bold="True" ForeColor="#FF3300"></asp:Label>
-    </div> 
-          
-    </form>
 </body>
 </html>
+

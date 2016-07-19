@@ -33,9 +33,13 @@ namespace bussinessLogic
                 {
                     return 1;
                 }
-                else if (a == 1 && b == "admin")
+                else if (a == 1 && b == "davar")
                 {
                     return 2;
+                }
+                else if (a == 1 && b == "admin")
+                {
+                    return 3;
                 }
                 else
                 {

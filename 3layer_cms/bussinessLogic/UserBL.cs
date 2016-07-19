@@ -27,6 +27,20 @@ namespace bussinessLogic
                 throw;
             }
         }
+        public int SaveRefereeregisrationBL(UserBO objUserBL) // passing Bussiness object Here
+        {
+            try
+            {
+                UserDA objUserda = new UserDA(); // Creating object of Dataccess
+
+                return objUserda.AddRefereeDetails(objUserBL); // calling Method of DataAccess
+
+            }
+            catch
+            {
+                throw;
+            }
+        }
         public string getMd5Hash(string input)
         {
             MD5 md5Hasher = MD5.Create();

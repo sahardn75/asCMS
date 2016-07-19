@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#"  AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_3layer_cms._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_3layer_cms._Default" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +14,12 @@
         } else {
             window.location = "login.aspx";
         }
+    }
+</script>
+<script type="text/javascript">
+    function setCookie() {
+        document.cookie = "logout";
+        window.location = "login.aspx";
     }
 </script>
 <head>
@@ -260,6 +266,8 @@
                             <div class="collapse navbar-collapse" id="navbar-collapse-3">
                                 <ul class="nav navbar-nav navbar-right">
                                     <li>
+                                        <li><a href="javascript:setCookie();" target="_blank"><i class="glyphicon glyphicon-off"></i>خروج</a></li>
+                                        <li><a href="changePassword.aspx" target="_blank"><i class="glyphicon glyphicon-cog"></i>تغییر رمز عبور</a></li>
                                         <li><a href="javascript:redirect();" target="_blank"><i class="glyphicon glyphicon-user"></i>ورود</a></li>
                                         <li><a href="register.aspx" target="_blank"><i class="glyphicon glyphicon-edit"></i>ثبت نام</a></li>
                                         <li><a href="conference.aspx" target="_blank"><i class="glyphicon glyphicon-book"></i>کنفرانس ها</a></li>

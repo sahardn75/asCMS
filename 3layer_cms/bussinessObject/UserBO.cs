@@ -19,6 +19,9 @@ namespace bussinessObject
 
         private string _Mobilenumber;
 
+       private string _Usertype;
+
+
         // Get and set values
 
         public string Name
@@ -79,6 +82,18 @@ namespace bussinessObject
             set
             {
                 _Mobilenumber = value;
+            }
+        }
+        public string Usertype
+        {
+
+            get
+            {
+                return _Usertype;
+            }
+            set
+            {
+                _Usertype = value;
             }
         }
     }
